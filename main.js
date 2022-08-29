@@ -1,3 +1,5 @@
+// Question 1
+
 function findThirdMax(arr) {
   sortArray(arr);
   return arr[2];
@@ -12,6 +14,8 @@ function sortArray(arr) {
   return arr;
 }
 
+// Question 2
+
 function tryRemoveFromArray(arr, index) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -23,12 +27,16 @@ function tryRemoveFromArray(arr, index) {
   return arr;
 }
 
+// Question 3
+
 function isSubstring(str1, str2) {
   for (let i = 0; i <= str2.length - str1.length; i++) {
     if (str2.slice(i, i + str1.length) === str1) return true;
   }
   return false;
 }
+
+// Question 4
 
 class Rectangle {
   constructor(x, y, width, height, color) {
